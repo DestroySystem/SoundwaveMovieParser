@@ -1,0 +1,24 @@
+﻿@using MovieCatalog.Components;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MovieCatalog</title>
+    <link rel="stylesheet" href="~/assets/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/assets/css/site.css" asp-append-version="true" />
+</head>
+<body>
+@await Component.InvokeAsync(typeof(MainHeaderViewComponent))
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/assets/lib/jquery/dist/"></script>
+    <script src="~/assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

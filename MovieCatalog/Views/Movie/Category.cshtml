@@ -1,0 +1,41 @@
+﻿@model CommonModels.MovieDetailsModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Movie</h1>
+
+<div class="container-fluid padding">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        @foreach (var item in Model.Models)
+        {
+            ViewData["Title"] = item.Category;
+            <div class="col-xl-3 col-md-8">
+                <div class="card h-100">
+                    <img src=@item?.CoverImage?.Path class="card-img" alt=@item?.OriginalName />
+                    <div class="card-body">
+                        <h4 class="card-title mb-2 text-muted">@Html.Raw(item?.OriginalName)</h4>
+                        <h5 class="card-text">@Html.Raw(item?.NameRu)</h5>
+                        <h6>Release date: <span>@Html.Raw(item?.ReleaseDate)</span></h6>
+                        <h6>Country: <span>@Html.Raw(item?.Country)</span></h6>
+                        <h6>Genres: <span>@Html.Raw(item?.Genres)</span></h6>
+                        <h6>Quality: <span>@Html.Raw(item?.Quality)</span></h6>
+                    </div>
+                    <div class="card-footer rounded-1">
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <input type="button" class="btn btn-primary rounded-5" value="Play" onclick="@("window.location.href='" + @Url.Action("LoadMovie", "Movie", new{id = $"{item?.Id},{item?.Category}"}) + "'");" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+
+

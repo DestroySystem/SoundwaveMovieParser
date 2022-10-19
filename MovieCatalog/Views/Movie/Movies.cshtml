@@ -1,0 +1,19 @@
+﻿@model List<string>;
+@{
+    ViewData["Title"] = "Movie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Movie</h1>
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Categories
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        @foreach (string category in Model)
+        {
+            <li><a class="dropdown-item" asp-controller="Movie" asp-action="Category" asp-route-id=@category>@Html.Raw(category)</a></li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,38 @@
+﻿@using CommonModels;
+@model IEnumerable<MovieModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@foreach (MovieModel item in Model)
+{
+    ViewData["Title"] = item?.OriginalName;
+    <div class="container col-lg-4">
+        <div class="card-group vgr-cards">
+            <div class="card">
+                <div class="card-img-body">
+                    <img class="card-img" src=@item?.CoverImage?.Path alt=@item?.OriginalName>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little
+                        bit longer.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary">Primary</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row mb-3">
+
+
+        <div class="p-2">
+            <iframe title="Movie" src="@item?.Link#player" class="responsive-iframe" style="align-content:center;" scrolling="no"></iframe>
+        </div>
+    </div>
+}
+

@@ -1,0 +1,802 @@
+{
+  "Models": [
+    {
+      "Id": "6216e516-31f4-4c52-9666-136395b39791",
+      "NameRu": " Все мы немного врём ",
+      "OriginalName": "4-nin wa Sorezore Uso wo Tsuku / The Little Lies We All Tell",
+      "ReleaseDate": "16 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "everyday"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52367-vse-my-nemnogo-vrem-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/16/v5df9e850ad60kf17y21p.png"
+      }
+    },
+    {
+      "Id": "fda903ca-1b38-40bb-8916-fe7f6122cf80",
+      "NameRu": " Любовные неудачи ",
+      "OriginalName": "Renai Flops / Love Flops",
+      "ReleaseDate": "12 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "romance",
+        "everyday"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52366-lyubovnye-neudachi-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/15/x92ad2bd4b5d7dn26c30g.png"
+      }
+    },
+    {
+      "Id": "8964e33f-e3f6-4142-b391-26564249dde8",
+      "NameRu": " Питер Грилл и время мудреца: Супер Экстра [ТВ-2] ",
+      "OriginalName": "Peter Grill to Kenja no Jikan: Super Extra / Peter Grill and the Philosopher's Time: Super Extra",
+      "ReleaseDate": "10 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "18+ только для взрослых",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "fantasy",
+        "romance",
+        "ecchi"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52294-piter-grill-i-vremya-mudreca-super-ekstra-tv-2-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/12/bdda532f8daf6hw31o87q.png"
+      }
+    },
+    {
+      "Id": "f3ef8771-09e1-4d7d-8b69-491db029272d",
+      "NameRu": " Одинокий рокер! / Рок-тихоня! ",
+      "OriginalName": "Bocchi the Rock!",
+      "ReleaseDate": "9 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "musical",
+        "everyday"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52261-odinokiy-roker-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/10/ye4e03030855ayw98y26q.png"
+      }
+    },
+    {
+      "Id": "c3d3298c-39c5-47c4-9464-bbb0fbfdb532",
+      "NameRu": " Больше чем пара, меньше чем любовники ",
+      "OriginalName": "Fuufu Ijou, Koibito Miman. / More Than a Married Couple, But Not Lovers",
+      "ReleaseDate": "9 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "romance"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52241-bolshe-chem-para-menshe-chem-lyubovniki-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/9/u04b3bbc55917eh37x45q.png"
+      }
+    },
+    {
+      "Id": "96630e8d-a3ff-4274-8719-b02bd8b972ca",
+      "NameRu": " Добро пожаловать в ад, Ирума! [ТВ-3] ",
+      "OriginalName": "Mairimashita! Iruma-kun / Welcome to Demon School! Iruma-kun",
+      "ReleaseDate": "8 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "fantasy"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52216-dobro-pozhalovat-v-ad-iruma-tv-3-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/8/t6ea18d146561ev86m16b.png"
+      }
+    },
+    {
+      "Id": "44452610-5113-473e-87bc-4c5d9b06d561",
+      "NameRu": " Вперед! Школьная секция пинг-понга ",
+      "OriginalName": "Ike! Ina-chuu Takkyuubu / Ping Pong Club",
+      "ReleaseDate": "5 апреля 1995 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "sport",
+        "everyday",
+        "ecchi",
+        "shounen"
+      ],
+      "Duration": "26 мин.",
+      "FromTheSeries": "",
+      "Link": "http://hdrezka.tv/animation/comedy/52166-vpered-shkolnaya-sekciya-ping-ponga-1995.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/15/m4a0b815c55a9up88n40i.png"
+      }
+    },
+    {
+      "Id": "166ae24f-95a6-4b0f-8e5b-bee6560890e1",
+      "NameRu": " Моб Психо 100 [ТВ-3] ",
+      "OriginalName": "Mob Psycho 100 III",
+      "ReleaseDate": "6 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "16+ для более зрелых и понимающих",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "fantasy",
+        "action",
+        "adventures"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52130-mob-psiho-100-tv-3-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/5/d0eee1b6b5659vw67j90y.png"
+      }
+    },
+    {
+      "Id": "80037b05-72b9-4f06-b23a-c8503e7f45eb",
+      "NameRu": " У моего мастера нет хвоста ",
+      "OriginalName": "Uchi no Shishou wa Shippo ga Nai / My Master Has No Tail",
+      "ReleaseDate": "30 сентября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "14+ взрослые темы и понятия, неподходящие для детей",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "fantasy"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52109-u-moego-mastera-net-hvosta-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/4/saab27873f3damd21f69r.png"
+      }
+    },
+    {
+      "Id": "f9608194-af25-4a40-b384-2e6081bb96ae",
+      "NameRu": " Моя геройская академия [ТВ-6] ",
+      "OriginalName": "Boku no Hero Academia (2022) / My Hero Academia Season 6",
+      "ReleaseDate": "1 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "16+ для более зрелых и понимающих",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "adventures",
+        "action",
+        "fiction"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52107-moya-geroyskaya-akademiya-tv-6-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/4/a9d848e3cc5d8va23h74b.png"
+      }
+    },
+    {
+      "Id": "b2554d29-a75e-446f-b6d3-3f408f9e5f21",
+      "NameRu": " Питер Грилл и время мудреца [ТВ-1] ",
+      "OriginalName": "Peter Grill to Kenja no Jikan / Peter Grill and the Philosopher's Time",
+      "ReleaseDate": "11 июля 2020 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "18+ только для взрослых",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "fantasy",
+        "romance",
+        "ecchi"
+      ],
+      "Duration": "12 мин.",
+      "FromTheSeries": " Аниме 2020 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52063-piter-grill-i-vremya-mudreca-tv-1-2020.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/3/h059c32fff4c2bh46x44b.png"
+      }
+    },
+    {
+      "Id": "3aa023df-4a18-4691-b980-a6651a6a9c19",
+      "NameRu": " Удзаки хочет тусоваться! [ТВ-2] ",
+      "OriginalName": "Uzaki-chan wa Asobitai! Double / Uzaki-chan Wants to Hang Out! W",
+      "ReleaseDate": "1 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "16+ для более зрелых и понимающих",
+      "Category": "animation",
+      "Genres": [
+        "comedy",
+        "romance"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/comedy/52026-udzaki-hochet-tusovatsya-tv-2-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/1/z91e4ce3ef48eea86x76s.png"
+      }
+    },
+    {
+      "Id": "127ae34f-0ddc-443e-9b14-6007accd2fb8",
+      "NameRu": " Принцесса-библиофил ",
+      "OriginalName": "Mushikaburi-hime / Bibliophile Princess",
+      "ReleaseDate": "6 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "romance"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/romance/52203-princessa-bibliofil-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/10/cadd031504b07wn88l64p.png"
+      }
+    },
+    {
+      "Id": "53b3cdb8-c1d4-4970-844e-0b95e99b8d4d",
+      "NameRu": " Трансформеры: Армада ",
+      "OriginalName": "Transufômâ: Maikuron densetsu / Transformers: Armada",
+      "ReleaseDate": "23 августа 2002 года",
+      "Country": "Япония, США",
+      "Quality": "720p",
+      "Age": "0+ можно смотреть всей семьей и наслаждаться просмотром",
+      "Category": "animation",
+      "Genres": [
+        "fiction",
+        "action",
+        "adventures",
+        "thriller",
+        "mecha"
+      ],
+      "Duration": "22 мин.",
+      "FromTheSeries": "",
+      "Link": "http://hdrezka.tv/animation/fiction/52361-transformery-armada-2002.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/15/p8fd577e5a2bban61b90e.png"
+      }
+    },
+    {
+      "Id": "3a5e6e05-4e31-49f6-993f-51debb5204f2",
+      "NameRu": " Исключение / Нештатная ситуация ",
+      "OriginalName": "Exception",
+      "ReleaseDate": "13 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "18+ только для взрослых",
+      "Category": "animation",
+      "Genres": [
+        "fiction",
+        "thriller",
+        "horror",
+        "drama"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года, Аниме Netflix ",
+      "Link": "http://hdrezka.tv/animation/fiction/52304-isklyuchenie-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/13/m213edb85d26blr62g63z.png"
+      }
+    },
+    {
+      "Id": "5396eb49-3485-455d-a076-1c77c572b593",
+      "NameRu": " Достичь Терры (фильм) ",
+      "OriginalName": "Terra e... / Toward the Terra",
+      "ReleaseDate": "26 апреля 1980 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "fiction",
+        "action",
+        "drama"
+      ],
+      "Duration": "111 мин.",
+      "FromTheSeries": "",
+      "Link": "http://hdrezka.tv/animation/fiction/52059-dostich-terry-film-1980.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/3/qe80dfa007620wr54q13i.png"
+      }
+    },
+    {
+      "Id": "8ad21891-67b3-4a10-bf11-2ca92df78f0e",
+      "NameRu": " Синяя тюрьма: Блю Лок ",
+      "OriginalName": "Blue Lock",
+      "ReleaseDate": "8 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "sport",
+        "everyday"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/sport/52222-sinyaya-tyurma-blyu-lok-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/9/u70087eac2b1dhl82q36l.png"
+      }
+    },
+    {
+      "Id": "432b057c-843a-4b31-8b11-c651c228ddc4",
+      "NameRu": " Человек-бензопила ",
+      "OriginalName": "Chainsaw Man",
+      "ReleaseDate": "1 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "18+ только для взрослых",
+      "Category": "animation",
+      "Genres": [
+        "fantasy",
+        "action",
+        "adventures",
+        "thriller",
+        "horror",
+        "comedy"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/fantasy/51376-chelovek-benzopila-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/9/6/p42979fc1e717cw24j60c.png"
+      }
+    },
+    {
+      "Id": "ee0a94ef-d70b-4da7-a151-d16f1fa3e404",
+      "NameRu": " Как укротитель зверей, изгнанный из отряда героя, встретил девушку-кошку сильнейшей расы ",
+      "OriginalName": "Yuusha Party o Tsuihou Sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau / Beast Tamer",
+      "ReleaseDate": "1 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "fantasy",
+        "comedy",
+        "adventures",
+        "action"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/fantasy/52043-kak-ukrotitel-zverey-izgnannyy-iz-otryada-geroya-vstretil-devushku-koshku-silneyshey-rasy-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/2/k27280ae05505wb13d24i.png"
+      }
+    },
+    {
+      "Id": "ef0a91eb-a95a-4dc2-a608-fc1d7a45dc3b",
+      "NameRu": " Ворона императорского гарема ",
+      "OriginalName": "Koukyuu no Karasu / Raven of the Inner Palace",
+      "ReleaseDate": "1 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "fantasy"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/fantasy/52028-vorona-imperatorskogo-garema-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/1/xd9875a27ff15dj50w30f.png"
+      }
+    },
+    {
+      "Id": "ed29cd5a-2559-4ba3-8915-aa4b1ce0eeca",
+      "NameRu": " Жилой комплекс C ",
+      "OriginalName": "C Danchi / Housing Complex C",
+      "ReleaseDate": "1 октября 2022 года",
+      "Country": "США, Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "horror",
+        "adventures"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/horror/52052-zhiloy-kompleks-c-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/2/t27bf05505a9byw30n25g.png"
+      }
+    },
+    {
+      "Id": "c67e97ab-88f7-48f6-aba3-545da698b724",
+      "NameRu": " Время ниндзя ",
+      "OriginalName": "Shinobi no Ittoki",
+      "ReleaseDate": "4 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "action",
+        "adventures"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/action/52077-vremya-nindzya-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/3/nfc7d83ef9958fo24l62k.png"
+      }
+    },
+    {
+      "Id": "2fc94017-6e47-4b93-84c3-0b718cc2a2f1",
+      "NameRu": " Первый шаг: Кимура против Машиба [OVA] ",
+      "OriginalName": "Hajime no Ippo: Kimura Vs. Mashiba / Fighting Spirit: Mashiba vs. Kimura",
+      "ReleaseDate": "5 сентября 2003 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "action",
+        "drama",
+        "sport"
+      ],
+      "Duration": "60 мин.",
+      "FromTheSeries": "",
+      "Link": "http://hdrezka.tv/animation/action/27227-pervyy-shag-kimura-protiv-mashiba-ova-2003.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/1/zcf5d7633b927xj45e92i.png"
+      }
+    },
+    {
+      "Id": "d55e36f9-8144-41b5-a5fd-7a080d3962b4",
+      "NameRu": " Несносные пришельцы ",
+      "OriginalName": "Urusei Yatsura / Lum, the Invader Girl",
+      "ReleaseDate": "13 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "comedy",
+        "romance",
+        "fiction"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52358-nesnosnye-prishelcy-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/15/s65f6b0d102b2ge77n51r.png"
+      }
+    },
+    {
+      "Id": "cf04945c-910b-4cbb-a4de-20cc341203ca",
+      "NameRu": " Блич: Тысячелетняя кровавая война / Блич [ТВ-2] ",
+      "OriginalName": "Bleach: Sennen Kessen-hen / Bleach: Thousand-Year Blood War",
+      "ReleaseDate": "10 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "action",
+        "fantasy"
+      ],
+      "Duration": "24 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/51176-blich-tysyacheletnyaya-krovavaya-voyna-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/8/27/mb5d352c0d359rb63m75p.png"
+      }
+    },
+    {
+      "Id": "f83a01a8-4b47-4920-9a66-3ef79d5ff1a0",
+      "NameRu": " Берсерк: Золотой век. Памятное издание ",
+      "OriginalName": "Berserk: Ougon Jidai Hen - Memorial Edition / Berserk: The Golden Age Arc - Memorial Edition",
+      "ReleaseDate": "2 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "action",
+        "fantasy"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52204-berserk-zolotoy-vek-pamyatnoe-izdanie-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/8/q9705c75a5c28jh45v85m.png"
+      }
+    },
+    {
+      "Id": "e018da1e-f83f-4fd5-8aa3-475facb5dd5a",
+      "NameRu": " Развращённая гильдия ",
+      "OriginalName": "Futoku no Guild / Immoral Guild",
+      "ReleaseDate": "5 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "18+ только для взрослых",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "comedy",
+        "fantasy",
+        "ecchi"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52165-razvraschennaya-gildiya-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/7/cf5458c74c24euy53s84j.png"
+      }
+    },
+    {
+      "Id": "0bd30475-4b0f-42d4-a8c5-4437b3c8bcae",
+      "NameRu": " Война горничных Акибы ",
+      "OriginalName": "Akiba Maid Sensou / Akiba Maid War",
+      "ReleaseDate": "7 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "comedy",
+        "everyday"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52163-voyna-gornichnyh-akiby-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/12/ycff7099bc2dcyg26t45w.png"
+      }
+    },
+    {
+      "Id": "1c7b5641-4f59-442f-bd5a-84626fcce157",
+      "NameRu": " Магазинчик начинающего алхимика ",
+      "OriginalName": "Shinmai renkinjutsushi no tenpo keiei / Management of Novice Alchemist",
+      "ReleaseDate": "3 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "fantasy",
+        "everyday"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52162-magazinchik-nachinayuschego-alhimika-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/13/yf604525fce46tt31e78u.png"
+      }
+    },
+    {
+      "Id": "3aecd98f-cb90-468f-8654-80cbe08247de",
+      "NameRu": " Сделай это сам! ",
+      "OriginalName": "Do It Yourself!!",
+      "ReleaseDate": "6 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "comedy",
+        "everyday"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52164-sdelay-eto-sam-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/15/pa20a3af6f07aii91n48v.png"
+      }
+    },
+    {
+      "Id": "fe84ce6c-6488-4199-a5ea-03ea97612944",
+      "NameRu": " Солнечная улыбка Арснотории! ",
+      "OriginalName": "Warau Arsnotoria Sun! / Smile of the Arsnotoria the Animation",
+      "ReleaseDate": "6 июля 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "comedy",
+        "fantasy"
+      ],
+      "Duration": "23 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52161-solnechnaya-ulybka-arsnotorii-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/15/r053d7589e46cza62c92w.png"
+      }
+    },
+    {
+      "Id": "70e0b8e3-0280-4fa0-894a-639ad5b355ca",
+      "NameRu": " Восхождение в тени! ",
+      "OriginalName": "Kage no Jitsuryokusha ni Naritakute! / The Eminence in Shadow",
+      "ReleaseDate": "5 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "action",
+        "comedy",
+        "fantasy"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52135-voshozhdenie-v-teni-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/6/z8e7ec46fa26ddq84x50f.png"
+      }
+    },
+    {
+      "Id": "c83452dc-db05-4f34-ae0d-3a9614884a12",
+      "NameRu": " Золотое божество [ТВ-4] ",
+      "OriginalName": "Golden Kamuy (2022)",
+      "ReleaseDate": "3 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "action"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52073-zolotoe-bozhestvo-tv-4-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/3/r78e9627cfe56zq11a93o.png"
+      }
+    },
+    {
+      "Id": "bdb9fa41-5f4e-48d1-885c-a6fa2c7a3a67",
+      "NameRu": " Я почему-то стал сильнейшим, прокачав свой навык фермерства ",
+      "OriginalName": "Noumin Kanren no Skill Bakka Agetetara Nazeka Tsuyoku Natta / I've Somehow Gotten Stronger When I Improved My Farm-Related Skills",
+      "ReleaseDate": "",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "action",
+        "fantasy"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52048-ya-pochemu-to-stal-silneyshim-prokachav-svoy-navyk-fermerstva-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/2/w65dac9afca18qw34j69s.png"
+      }
+    },
+    {
+      "Id": "38e5f931-b3de-4908-b002-e42359baade9",
+      "NameRu": " Легенда о Зорро ",
+      "OriginalName": "Kaiketsu Zorro / The Legend of Zorro",
+      "ReleaseDate": "5 апреля 1996 года",
+      "Country": "Япония, Италия, Швейцария",
+      "Quality": "720p",
+      "Age": "12+ взрослые темы и понятия, но темы не раскрыты",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "action",
+        "comedy",
+        "history"
+      ],
+      "Duration": "24 мин.",
+      "FromTheSeries": "",
+      "Link": "http://hdrezka.tv/animation/adventures/52036-legenda-o-zorro-1996.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/2/v81f4096b68acsh49p77b.png"
+      }
+    },
+    {
+      "Id": "2cca4a34-cb65-45d8-83d2-1fa0f235a5ba",
+      "NameRu": " Семья шпиона [ТВ-2] ",
+      "OriginalName": "Spy x Family 2",
+      "ReleaseDate": "1 октября 2022 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "16+ для более зрелых и понимающих",
+      "Category": "animation",
+      "Genres": [
+        "adventures",
+        "action",
+        "comedy",
+        "drama",
+        "thriller"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": " Аниме 2022 года ",
+      "Link": "http://hdrezka.tv/animation/adventures/52027-semya-shpiona-tv-2-2022.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/1/i02dc87f44da4mw43g60c.png"
+      }
+    }
+  ]
+}
