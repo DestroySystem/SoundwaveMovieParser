@@ -1,17 +1,15 @@
-﻿using CommonModels;
+﻿using System.Reflection;
+
+using CommonModels;
+
 using HtmlParser.Dictionary;
-using System.Diagnostics;
-using System.Reflection;
+using HtmlParser.Parser;
 
 using Microsoft.AspNetCore.Mvc;
 
 using MovieCatalog.Cache;
 
-using MovieCatalog.Models;
-
 using Newtonsoft.Json;
-using HtmlParser.Parser;
-using HtmlParser.Common;
 
 namespace MovieCatalog.Controllers
 {
@@ -20,7 +18,7 @@ namespace MovieCatalog.Controllers
         private readonly ILogger<MovieController> _logger;
         private readonly HtmlParsing _parser;
         private readonly DataCache _dataCache;
-        private string RuntimePath { get; set; } = Path.Combine(Environment.CurrentDirectory, "Data");
+        private string RuntimePath { get; } = Path.Combine(Environment.CurrentDirectory, "Data");
 
         public MovieController(ILogger<MovieController> logger, HtmlParsing parser, DataCache dataCache)
         {
@@ -34,7 +32,7 @@ namespace MovieCatalog.Controllers
         {
             CategoriesDictionary dictionary = new();
             List<string> categories = dictionary.GetCategories();
-            return View("Movies", categories);
+            return View(categories);
         }
 
         [HttpGet]
@@ -78,20 +76,20 @@ namespace MovieCatalog.Controllers
             {
                 _logger.LogError($"Error from: {MethodBase.GetCurrentMethod()?.Name} Error message: {err}", err);
             }
-            return View("Category",detailsModel);
+            return View(detailsModel);
         }
 
         [HttpGet]
         public async Task<IActionResult> LoadMovie(string id)
         {
-            List<string> fromRequest = id.Split(',').ToList();
+            List<string> fromRequest = id.Split('&').ToList();
             MovieDetailsModel? detailsModel = new();
             try
             {
                 if (!Directory.Exists(RuntimePath))
                 {
                     _logger.LogError($"No data detected on path: {RuntimePath}");
-                    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                    //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
                 }
                 else
                 {

@@ -1,7 +1,7 @@
 {
   "Models": [
     {
-      "Id": "6216e516-31f4-4c52-9666-136395b39791",
+      "Id": "1f038af0-df6b-4161-9060-d2feb293a249",
       "NameRu": " Все мы немного врём ",
       "OriginalName": "4-nin wa Sorezore Uso wo Tsuku / The Little Lies We All Tell",
       "ReleaseDate": "16 октября 2022 года",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "Id": "fda903ca-1b38-40bb-8916-fe7f6122cf80",
+      "Id": "2fcad25e-9236-4b40-9202-cce0a0461193",
       "NameRu": " Любовные неудачи ",
       "OriginalName": "Renai Flops / Love Flops",
       "ReleaseDate": "12 октября 2022 года",
@@ -44,7 +44,7 @@
       }
     },
     {
-      "Id": "8964e33f-e3f6-4142-b391-26564249dde8",
+      "Id": "807afd76-004c-4326-8503-8a2d8e9b2cbb",
       "NameRu": " Питер Грилл и время мудреца: Супер Экстра [ТВ-2] ",
       "OriginalName": "Peter Grill to Kenja no Jikan: Super Extra / Peter Grill and the Philosopher's Time: Super Extra",
       "ReleaseDate": "10 октября 2022 года",
@@ -67,7 +67,7 @@
       }
     },
     {
-      "Id": "f3ef8771-09e1-4d7d-8b69-491db029272d",
+      "Id": "ce3764bd-d0c6-45fe-b056-a2f03f485295",
       "NameRu": " Одинокий рокер! / Рок-тихоня! ",
       "OriginalName": "Bocchi the Rock!",
       "ReleaseDate": "9 октября 2022 года",
@@ -89,7 +89,7 @@
       }
     },
     {
-      "Id": "c3d3298c-39c5-47c4-9464-bbb0fbfdb532",
+      "Id": "6d8b9599-7e8e-4ffa-9783-cf96b388318b",
       "NameRu": " Больше чем пара, меньше чем любовники ",
       "OriginalName": "Fuufu Ijou, Koibito Miman. / More Than a Married Couple, But Not Lovers",
       "ReleaseDate": "9 октября 2022 года",
@@ -110,7 +110,7 @@
       }
     },
     {
-      "Id": "96630e8d-a3ff-4274-8719-b02bd8b972ca",
+      "Id": "2c084724-1730-4600-a0f8-e27cd7d26149",
       "NameRu": " Добро пожаловать в ад, Ирума! [ТВ-3] ",
       "OriginalName": "Mairimashita! Iruma-kun / Welcome to Demon School! Iruma-kun",
       "ReleaseDate": "8 октября 2022 года",
@@ -131,7 +131,7 @@
       }
     },
     {
-      "Id": "44452610-5113-473e-87bc-4c5d9b06d561",
+      "Id": "4c2961e7-9961-46bb-a63b-c17f82ee5f2b",
       "NameRu": " Вперед! Школьная секция пинг-понга ",
       "OriginalName": "Ike! Ina-chuu Takkyuubu / Ping Pong Club",
       "ReleaseDate": "5 апреля 1995 года",
@@ -155,7 +155,7 @@
       }
     },
     {
-      "Id": "166ae24f-95a6-4b0f-8e5b-bee6560890e1",
+      "Id": "750007dd-1cc1-47fc-bb11-d8de522c36bc",
       "NameRu": " Моб Психо 100 [ТВ-3] ",
       "OriginalName": "Mob Psycho 100 III",
       "ReleaseDate": "6 октября 2022 года",
@@ -178,7 +178,7 @@
       }
     },
     {
-      "Id": "80037b05-72b9-4f06-b23a-c8503e7f45eb",
+      "Id": "319ea355-5909-4e91-be73-0f1dc7019ada",
       "NameRu": " У моего мастера нет хвоста ",
       "OriginalName": "Uchi no Shishou wa Shippo ga Nai / My Master Has No Tail",
       "ReleaseDate": "30 сентября 2022 года",
@@ -199,7 +199,7 @@
       }
     },
     {
-      "Id": "f9608194-af25-4a40-b384-2e6081bb96ae",
+      "Id": "16d83a04-7a82-4f2a-b928-996187efa746",
       "NameRu": " Моя геройская академия [ТВ-6] ",
       "OriginalName": "Boku no Hero Academia (2022) / My Hero Academia Season 6",
       "ReleaseDate": "1 октября 2022 года",
@@ -222,7 +222,7 @@
       }
     },
     {
-      "Id": "b2554d29-a75e-446f-b6d3-3f408f9e5f21",
+      "Id": "3b809f6f-6ece-49ef-a724-6fd0fbd46856",
       "NameRu": " Питер Грилл и время мудреца [ТВ-1] ",
       "OriginalName": "Peter Grill to Kenja no Jikan / Peter Grill and the Philosopher's Time",
       "ReleaseDate": "11 июля 2020 года",
@@ -245,28 +245,7 @@
       }
     },
     {
-      "Id": "3aa023df-4a18-4691-b980-a6651a6a9c19",
-      "NameRu": " Удзаки хочет тусоваться! [ТВ-2] ",
-      "OriginalName": "Uzaki-chan wa Asobitai! Double / Uzaki-chan Wants to Hang Out! W",
-      "ReleaseDate": "1 октября 2022 года",
-      "Country": "Япония",
-      "Quality": "720p",
-      "Age": "16+ для более зрелых и понимающих",
-      "Category": "animation",
-      "Genres": [
-        "comedy",
-        "romance"
-      ],
-      "Duration": "25 мин.",
-      "FromTheSeries": " Аниме 2022 года ",
-      "Link": "http://hdrezka.tv/animation/comedy/52026-udzaki-hochet-tusovatsya-tv-2-2022.html",
-      "CoverImage": {
-        "ContentType": "image/png",
-        "Path": "http://static.rezka.cloud/i/2022/10/1/z91e4ce3ef48eea86x76s.png"
-      }
-    },
-    {
-      "Id": "127ae34f-0ddc-443e-9b14-6007accd2fb8",
+      "Id": "ecc2ea41-2139-4d1f-8dd2-cfe99586af5f",
       "NameRu": " Принцесса-библиофил ",
       "OriginalName": "Mushikaburi-hime / Bibliophile Princess",
       "ReleaseDate": "6 октября 2022 года",
@@ -286,7 +265,7 @@
       }
     },
     {
-      "Id": "53b3cdb8-c1d4-4970-844e-0b95e99b8d4d",
+      "Id": "fc97ffe8-1001-428c-9abf-4b6ae3f43ee4",
       "NameRu": " Трансформеры: Армада ",
       "OriginalName": "Transufômâ: Maikuron densetsu / Transformers: Armada",
       "ReleaseDate": "23 августа 2002 года",
@@ -310,7 +289,7 @@
       }
     },
     {
-      "Id": "3a5e6e05-4e31-49f6-993f-51debb5204f2",
+      "Id": "dcb0a053-eaca-41d9-9e21-9c8a64351a94",
       "NameRu": " Исключение / Нештатная ситуация ",
       "OriginalName": "Exception",
       "ReleaseDate": "13 октября 2022 года",
@@ -333,7 +312,7 @@
       }
     },
     {
-      "Id": "5396eb49-3485-455d-a076-1c77c572b593",
+      "Id": "0d8b3cc5-af61-4c4d-b8fd-26eea5453182",
       "NameRu": " Достичь Терры (фильм) ",
       "OriginalName": "Terra e... / Toward the Terra",
       "ReleaseDate": "26 апреля 1980 года",
@@ -355,7 +334,7 @@
       }
     },
     {
-      "Id": "8ad21891-67b3-4a10-bf11-2ca92df78f0e",
+      "Id": "47f90bf1-4bef-4d42-9324-e7e883768286",
       "NameRu": " Синяя тюрьма: Блю Лок ",
       "OriginalName": "Blue Lock",
       "ReleaseDate": "8 октября 2022 года",
@@ -376,7 +355,30 @@
       }
     },
     {
-      "Id": "432b057c-843a-4b31-8b11-c651c228ddc4",
+      "Id": "4ddc1f49-3a2c-41db-85b8-b1fd1202721f",
+      "NameRu": " Токийская школа истребителей нечисти: Боевой кулак / Токийская школа магов: Боевой кулак [ТВ-2] ",
+      "OriginalName": "Tokyo Majin Gakuen Kenpucho To Dai Ni Maku / Tokyo Wizard Academy",
+      "ReleaseDate": "27 июля 2007 года",
+      "Country": "Япония",
+      "Quality": "720p",
+      "Age": "12+ взрослые темы и понятия, но темы не раскрыты",
+      "Category": "animation",
+      "Genres": [
+        "fantasy",
+        "adventures",
+        "action",
+        "horror"
+      ],
+      "Duration": "25 мин.",
+      "FromTheSeries": "",
+      "Link": "http://hdrezka.tv/animation/fantasy/52418-tokiyskaya-shkola-istrebiteley-nechisti-boevoy-kulak-2007.html",
+      "CoverImage": {
+        "ContentType": "image/png",
+        "Path": "http://static.rezka.cloud/i/2022/10/19/g736575c2ff14hj13j54a.png"
+      }
+    },
+    {
+      "Id": "340beb5b-fe76-4f45-ad3e-52186e461271",
       "NameRu": " Человек-бензопила ",
       "OriginalName": "Chainsaw Man",
       "ReleaseDate": "1 октября 2022 года",
@@ -401,7 +403,7 @@
       }
     },
     {
-      "Id": "ee0a94ef-d70b-4da7-a151-d16f1fa3e404",
+      "Id": "e4005015-a792-47cc-ae20-4fb4ae586200",
       "NameRu": " Как укротитель зверей, изгнанный из отряда героя, встретил девушку-кошку сильнейшей расы ",
       "OriginalName": "Yuusha Party o Tsuihou Sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau / Beast Tamer",
       "ReleaseDate": "1 октября 2022 года",
@@ -424,7 +426,7 @@
       }
     },
     {
-      "Id": "ef0a91eb-a95a-4dc2-a608-fc1d7a45dc3b",
+      "Id": "3ee29f3e-5c34-4168-a860-7a1d52ac77df",
       "NameRu": " Ворона императорского гарема ",
       "OriginalName": "Koukyuu no Karasu / Raven of the Inner Palace",
       "ReleaseDate": "1 октября 2022 года",
@@ -444,7 +446,7 @@
       }
     },
     {
-      "Id": "ed29cd5a-2559-4ba3-8915-aa4b1ce0eeca",
+      "Id": "1f15ef42-8eda-41d8-9dce-2574088b24cd",
       "NameRu": " Жилой комплекс C ",
       "OriginalName": "C Danchi / Housing Complex C",
       "ReleaseDate": "1 октября 2022 года",
@@ -465,7 +467,7 @@
       }
     },
     {
-      "Id": "c67e97ab-88f7-48f6-aba3-545da698b724",
+      "Id": "030a73bf-8411-4b64-8331-137db84b851d",
       "NameRu": " Время ниндзя ",
       "OriginalName": "Shinobi no Ittoki",
       "ReleaseDate": "4 октября 2022 года",
@@ -486,7 +488,7 @@
       }
     },
     {
-      "Id": "2fc94017-6e47-4b93-84c3-0b718cc2a2f1",
+      "Id": "c0d6c13e-9088-4252-9a3a-465876edd2db",
       "NameRu": " Первый шаг: Кимура против Машиба [OVA] ",
       "OriginalName": "Hajime no Ippo: Kimura Vs. Mashiba / Fighting Spirit: Mashiba vs. Kimura",
       "ReleaseDate": "5 сентября 2003 года",
@@ -508,7 +510,7 @@
       }
     },
     {
-      "Id": "d55e36f9-8144-41b5-a5fd-7a080d3962b4",
+      "Id": "1f9e2cca-70f5-4d34-9157-3e0ddafdf890",
       "NameRu": " Несносные пришельцы ",
       "OriginalName": "Urusei Yatsura / Lum, the Invader Girl",
       "ReleaseDate": "13 октября 2022 года",
@@ -531,7 +533,7 @@
       }
     },
     {
-      "Id": "cf04945c-910b-4cbb-a4de-20cc341203ca",
+      "Id": "6b86c39e-c48b-4e18-9a66-437e2f2d2102",
       "NameRu": " Блич: Тысячелетняя кровавая война / Блич [ТВ-2] ",
       "OriginalName": "Bleach: Sennen Kessen-hen / Bleach: Thousand-Year Blood War",
       "ReleaseDate": "10 октября 2022 года",
@@ -553,7 +555,7 @@
       }
     },
     {
-      "Id": "f83a01a8-4b47-4920-9a66-3ef79d5ff1a0",
+      "Id": "157a1691-cec5-495d-8441-f168e3f140ff",
       "NameRu": " Берсерк: Золотой век. Памятное издание ",
       "OriginalName": "Berserk: Ougon Jidai Hen - Memorial Edition / Berserk: The Golden Age Arc - Memorial Edition",
       "ReleaseDate": "2 октября 2022 года",
@@ -575,7 +577,7 @@
       }
     },
     {
-      "Id": "e018da1e-f83f-4fd5-8aa3-475facb5dd5a",
+      "Id": "5e5fc6ce-0472-466b-9ce3-80ceeb8f6693",
       "NameRu": " Развращённая гильдия ",
       "OriginalName": "Futoku no Guild / Immoral Guild",
       "ReleaseDate": "5 октября 2022 года",
@@ -598,7 +600,7 @@
       }
     },
     {
-      "Id": "0bd30475-4b0f-42d4-a8c5-4437b3c8bcae",
+      "Id": "9b06b63a-ea3f-465f-8bc2-c7059011bd4b",
       "NameRu": " Война горничных Акибы ",
       "OriginalName": "Akiba Maid Sensou / Akiba Maid War",
       "ReleaseDate": "7 октября 2022 года",
@@ -620,7 +622,7 @@
       }
     },
     {
-      "Id": "1c7b5641-4f59-442f-bd5a-84626fcce157",
+      "Id": "ac9aabe7-243f-4c3b-b517-827470dd47e4",
       "NameRu": " Магазинчик начинающего алхимика ",
       "OriginalName": "Shinmai renkinjutsushi no tenpo keiei / Management of Novice Alchemist",
       "ReleaseDate": "3 октября 2022 года",
@@ -642,7 +644,7 @@
       }
     },
     {
-      "Id": "3aecd98f-cb90-468f-8654-80cbe08247de",
+      "Id": "f011a4b5-58da-4601-8529-cafb9fe60ac6",
       "NameRu": " Сделай это сам! ",
       "OriginalName": "Do It Yourself!!",
       "ReleaseDate": "6 октября 2022 года",
@@ -664,7 +666,7 @@
       }
     },
     {
-      "Id": "fe84ce6c-6488-4199-a5ea-03ea97612944",
+      "Id": "9b9c3954-2d27-41b9-b184-df035ac8122d",
       "NameRu": " Солнечная улыбка Арснотории! ",
       "OriginalName": "Warau Arsnotoria Sun! / Smile of the Arsnotoria the Animation",
       "ReleaseDate": "6 июля 2022 года",
@@ -686,7 +688,7 @@
       }
     },
     {
-      "Id": "70e0b8e3-0280-4fa0-894a-639ad5b355ca",
+      "Id": "e408b066-9f42-4c10-ad5b-1039768b993e",
       "NameRu": " Восхождение в тени! ",
       "OriginalName": "Kage no Jitsuryokusha ni Naritakute! / The Eminence in Shadow",
       "ReleaseDate": "5 октября 2022 года",
@@ -709,7 +711,7 @@
       }
     },
     {
-      "Id": "c83452dc-db05-4f34-ae0d-3a9614884a12",
+      "Id": "9b575559-6e47-467b-ba98-377d952e8453",
       "NameRu": " Золотое божество [ТВ-4] ",
       "OriginalName": "Golden Kamuy (2022)",
       "ReleaseDate": "3 октября 2022 года",
@@ -730,7 +732,7 @@
       }
     },
     {
-      "Id": "bdb9fa41-5f4e-48d1-885c-a6fa2c7a3a67",
+      "Id": "6ab1d0a1-0bf6-4f74-82a4-efa08cad483c",
       "NameRu": " Я почему-то стал сильнейшим, прокачав свой навык фермерства ",
       "OriginalName": "Noumin Kanren no Skill Bakka Agetetara Nazeka Tsuyoku Natta / I've Somehow Gotten Stronger When I Improved My Farm-Related Skills",
       "ReleaseDate": "",
@@ -752,7 +754,7 @@
       }
     },
     {
-      "Id": "38e5f931-b3de-4908-b002-e42359baade9",
+      "Id": "633209a4-3b00-4247-b669-dfec83b3fd42",
       "NameRu": " Легенда о Зорро ",
       "OriginalName": "Kaiketsu Zorro / The Legend of Zorro",
       "ReleaseDate": "5 апреля 1996 года",
@@ -775,7 +777,7 @@
       }
     },
     {
-      "Id": "2cca4a34-cb65-45d8-83d2-1fa0f235a5ba",
+      "Id": "f974e7b6-b389-4839-879f-c30d2737ea20",
       "NameRu": " Семья шпиона [ТВ-2] ",
       "OriginalName": "Spy x Family 2",
       "ReleaseDate": "1 октября 2022 года",
