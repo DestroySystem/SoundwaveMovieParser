@@ -13,13 +13,21 @@ public class Program
         EfDatabaseOperations operations = new EfDatabaseOperations();
         List<string> categories = dictionary.GetCategories();
 
-      // operations.AddCategory(categories);
-      // operations.AddGenres();
-      operations.TranslateGenres();
+        operations.AddCategory(categories);
+        operations.AddGenres();
+        operations.TranslateGenres();
+        operations.AddCategoryToGenres();
         //operations.Update();
-       //operations.ReadCategories();
-      operations.ReadGenres();
+        operations.ReadCategories();
+        operations.ReadGenres();
         //operations.Remove();
+
+/*        List<string> countries = operations.GetAllCountrysNames();
+        foreach(string country in countries)
+        {
+            Console.WriteLine(country);
+        }*/
+
         Console.ReadLine();
     }
 }

@@ -1,11 +1,13 @@
-﻿using System.Collections.Immutable;
+﻿using System.Globalization;
+
+using CommonModels;
 
 using EFCoreModels.Context;
 using EFCoreModels.Models;
 
 using HtmlParser.Dictionary;
 
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Newtonsoft.Json;
 
 namespace EFCoreModels
 {
@@ -81,27 +83,38 @@ namespace EFCoreModels
         }
 
 
-        public void TranslateGenres()
-        {
-            MovieDbContext context = new();
-            CategoriesDictionary dictionary = new CategoriesDictionary();
-            Dictionary<string, string> translate = dictionary.RussianNameToEnglish();
-            List<Genres> genres = context.Genres.OrderBy(b => b.Id).ToList();
-            foreach (var genre in genres)
-            {
-                foreach (var item in translate.Keys)
+        /*        public void InsertMoviesFromJson()
                 {
-                    foreach (var i in translate.Values)
+                    string json = File.ReadAllText(@"C:\SoundwaveMovieParser\MovieCatalog\Data\animationListData.json");
+                    MovieDbContext context = new MovieDbContext();
+                    MovieDetailsModel movieDetails = JsonConvert.DeserializeObject<MovieDetailsModel>(json);
+                    foreach(MovieModel movie in movieDetails.Models)
                     {
-                        if (i.Contains(genre.Name))
+                        context.Add(new Movies()
                         {
-                            genre.NameRu = item;
-                        }
+                            OriginalName = movie.OriginalName,
+                            NameRu = movie.NameRu,
+                            Age = movie.Age,
+                            Country = movie.Country
+                        })
                     }
+                }*/
+
+        public List<string> GetAllCountrysNames()
+        {
+            List<string> CultureList = new List<string>();
+            CultureInfo[] getCultureInfo = CultureInfo.GetCultures(CultureTypes.SpecificCultures);
+            foreach (var culture in getCultureInfo)
+            {
+                RegionInfo GetRegionInfo = new RegionInfo(culture.LCID);
+                if (!(CultureList.Contains(GetRegionInfo.EnglishName)))
+                {
+                    CultureList.Add(GetRegionInfo.EnglishName);
                 }
             }
 
-            context.SaveChanges();
+            CultureList.Sort();
+            return CultureList;
         }
 
         public void ReadGenres()
@@ -128,6 +141,28 @@ namespace EFCoreModels
                 {
                     Console.WriteLine($"{item.Id} {item.Name} {item.NameRu}");
                 }
+            }
+            context.Dispose();
+        }
+
+        public void TranslateGenres()
+        {
+            MovieDbContext context = new();
+            CategoriesDictionary dictionary = new CategoriesDictionary();
+            Dictionary<string, string> translate = dictionary.EnglishNameToRussian();
+            List<Genres> genres = context.Genres.OrderBy(b => b.Id).ToList();
+
+            foreach (var genre in genres)
+            {
+                Genres gen = context.Genres.First(x => x.Name == genre.Name);
+                foreach (var item in translate.Keys)
+                {
+                    if (item == genre.Name)
+                    {
+                        gen.NameRu = translate[item];
+                    }
+                }
+                context.SaveChanges();
             }
             context.Dispose();
         }

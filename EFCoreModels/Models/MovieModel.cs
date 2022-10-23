@@ -30,14 +30,6 @@ namespace EFCoreModels.Models
         public string? Link { get; set; }
     }
 
-    public class Countries
-    {
-        [Key]
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public string? NameRu { get; set; }
-    }
-
     public class Movies
     {
         [Key]
@@ -54,8 +46,7 @@ namespace EFCoreModels.Models
         public Guid? Image { get; set; }
         [ForeignKey("CategoryID")]
         public int? Category { get; set; }
-        [ForeignKey("CountryID")]
-        public int? Country { get; set; }
+        public string? Country { get; set; }
     }
 
     public class GenresToMovie

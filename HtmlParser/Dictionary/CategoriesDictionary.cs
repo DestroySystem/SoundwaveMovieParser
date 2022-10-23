@@ -55,9 +55,58 @@
                 {"Сёнэн","shounen" },
                 {"Сказки","fairytale" },
                 {"Повседневность","everyday" },
-                {"Боевые искуства","fighting" }
+                {"Боевые искуства","fighting" },
+                {"Исторические", "historical" }
             };
             return ruGenres;
+        }
+
+
+        public Dictionary<string, string> EnglishNameToRussian()
+        {
+            Dictionary<string, string> enGenres = new()
+            {
+                {"crime" , "Криминал" },
+                {"comedy" , "Комедии" },
+                {"fiction" , "Фантастика" },
+                {"family" , "Семейные" },
+                {"action" , "Боевики" },
+                {"adventures" , "Приключения" },
+                {"fantasy" , "Фэнтези" },
+                {"kids" , "Детские" },
+                {"detective" , "Детектив" },
+                {"thriller" , "Триллеры" },
+                {"foreign" , "Зарубежные" },
+                {"military" , "Военные" },
+                {"documentary" , "Документальные" },
+                {"melodrama" , "Мелодрамы" },
+                {"horror" , "Ужасы" },
+                {"drama" , "Драмы" },
+                {"realtv" , "Реальное ТВ" },
+                {"romance" , "Романтические" },
+                {"musical" , "Музыкальные" },
+                {"samurai" , "Самурайский боевик" },
+                {"parody" , "Пародия" },
+                {"kodomo" , "Кодомо" },
+                {"shounenai" , "Сёнэн-ай" },
+                {"history" , "Исторические" },
+                {"erotic" , "Эротика" },
+                {"sport" , "Спортивные" },
+                {"school" , "Школа" },
+                {"shoujoai" , "Сёдзё-ай" },
+                {"ecchi" , "Этти" },
+                {"educational" , "Образовательные" },
+                {"shoujo" , "Сёдзё" },
+                {"mahoushoujo" , "Махо-сёдзё" },
+                {"mystery" , "Мистические" },
+                {"mecha" , "Меха" },
+                {"shounen" , "Сёнэн" },
+                {"fairytale" , "Сказки" },
+                {"everyday","Повседневность" },
+                {"fighting","Боевые искуства" },
+                {"historical", "Исторические" }
+            };
+            return enGenres;
         }
 
         public List<string> GetCategories()

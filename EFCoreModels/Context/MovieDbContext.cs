@@ -9,7 +9,6 @@ namespace EFCoreModels.Context
         public DbSet<Genres>? Genres { get; set; }
         public DbSet<Categories>? Categories { get; set; }
         public DbSet<Images>? Images { get; set; }
-        public DbSet<Countries>? Countries { get; set; }
         public DbSet<GenresToMovie>? GenresToMovies { get; set; }
         public DbSet<Movies>? Movies { get; set; }
         public DbSet<CategoryToGenres>? CategoryToGenres { get; set; }
@@ -48,9 +47,6 @@ namespace EFCoreModels.Context
                 .Property(b => b.Id)
                 .ValueGeneratedOnAdd();
 
-            builder.Entity<Countries>()
-                .Property(b => b.Id)
-                .ValueGeneratedOnAdd();
 
             builder.Entity<GenresToMovie>()
                 .Property(b => b.Id)
