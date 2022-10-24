@@ -1,7 +1,7 @@
 ﻿using System.Text;
 
 using EFCoreData.Context;
-
+using EFCoreData.Operations;
 using HtmlParser.Common;
 using HtmlParser.Dictionary;
 
@@ -11,8 +11,8 @@ namespace EFCoreData
 {
     public class Program
     {
-        private static readonly ILogger<Utils> _logger;
-        public static async Task Main(string[] args)
+        private static readonly ILogger<Utils>? _logger;
+        public static Task Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             CategoriesDictionary dictionary = new CategoriesDictionary();
@@ -38,6 +38,7 @@ namespace EFCoreData
             //operations.Remove();
 
             Console.ReadLine();
+            return Task.CompletedTask;
         }
     }
 }

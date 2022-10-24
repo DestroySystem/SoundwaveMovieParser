@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 
 using CommonModels;
-using EFCoreData;
+using EFCoreData.Operations;
 using HtmlParser.Common;
 
 using Newtonsoft.Json;

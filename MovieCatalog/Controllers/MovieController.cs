@@ -36,7 +36,7 @@ namespace MovieCatalog.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Category(string id)
+        public async Task<IActionResult> Category(string category)
         {
             string data = string.Empty;
             MovieDetailsModel? detailsModel = new();
@@ -48,8 +48,8 @@ namespace MovieCatalog.Controllers
                 string[] files = Directory.GetFiles(RuntimePath);
                 if (files.Length == 0)
                 {
-                    data = await _parser.GetMovieAsync(category: id);
-                    await _dataCache.StoreDataToFileCache(data, RuntimePath, id);
+                    data = await _parser.GetMovieAsync(category: category);
+                    await _dataCache.StoreDataToFileCache(data, RuntimePath, category);
                 }
                 else
                 {
@@ -58,14 +58,14 @@ namespace MovieCatalog.Controllers
                         if (file.Length != 0)
                         {
                             FileInfo fileInfo = new(file);
-                            if (fileInfo.Exists && fileInfo.FullName.Contains(id) && fileInfo.Extension == ".json")
+                            if (fileInfo.Exists && fileInfo.FullName.Contains(category) && fileInfo.Extension == ".json")
                             {
                                 data = await System.IO.File.ReadAllTextAsync(file);
                             }
                             else
                             {
-                                data = await _parser.GetMovieAsync(id);
-                                await _dataCache.StoreDataToFileCache(data, RuntimePath, id);
+                                data = await _parser.GetMovieAsync(category);
+                                await _dataCache.StoreDataToFileCache(data, RuntimePath, category);
                             }
                         }
                     }

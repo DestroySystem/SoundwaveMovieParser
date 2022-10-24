@@ -12,10 +12,10 @@ using Microsoft.Extensions.Logging;
 
 using Newtonsoft.Json;
 
-namespace EFCoreData
+namespace EFCoreData.Operations
 {
     // ReSharper disable once InconsistentNaming
-    public class EFDatabaseOperations
+    public class EFDatabaseOperations : IEFCoreDataOperations
     {
         private readonly Utils _utils;
         private readonly ILogger<EFDatabaseOperations> _logger;
@@ -31,7 +31,6 @@ namespace EFCoreData
 
         public void AddCategory(List<string> category)
         {
-            MovieDbContext _context = new();
             foreach (string item in category)
             {
                 _context.Add(new Categories()
@@ -71,7 +70,6 @@ namespace EFCoreData
         public void AddCategoryToGenres()
         {
             CategoriesDictionary dictionary = new CategoriesDictionary();
-            Dictionary<int, int> dict = new Dictionary<int, int>();
             Dictionary<string, List<string>> catDictionary = dictionary.Categories();
 
             try
@@ -107,7 +105,7 @@ namespace EFCoreData
 
         }
 
-        public async Task CheckIfRecordNotExist(string category)
+        public async Task CheckRecordNotExist(string category)
         {
 
         }

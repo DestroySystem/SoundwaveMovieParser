@@ -15,7 +15,7 @@
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 @foreach (string category in Model)
                 {
-                    <li><a class="dropdown-item" asp-controller="Movie" asp-action="Category" asp-route-id=@category>@Html.Raw(category)</a></li>
+                    <li><a class="dropdown-item" asp-controller="Movie" asp-action="Category" asp-route-category=@category>@Html.Raw(category)</a></li>
                 }
             </ul>
         </div>

@@ -1,6 +1,5 @@
-﻿using EFCoreData;
-using EFCoreData.Context;
-
+﻿using EFCoreData.Context;
+using EFCoreData.Operations;
 using MovieCatalog.Cache;
 
 namespace MovieCatalog
