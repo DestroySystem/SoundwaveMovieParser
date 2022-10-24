@@ -1,18 +1,21 @@
 ﻿using System.Drawing;
 using System.Drawing.Imaging;
+using System.Net;
 using System.Reflection;
-using System.Runtime.InteropServices;
+using System.Text;
 
 using HtmlAgilityPack;
 
 using Microsoft.Extensions.Logging;
 
+using Encoder = System.Drawing.Imaging.Encoder;
+
 namespace HtmlParser.Common
 {
     public class Utils
     {
-        private readonly ILogger<Utils> _logger;
-        public Utils(ILogger<Utils> logger)
+        private readonly ILogger<Utils>? _logger;
+        public Utils(ILogger<Utils>? logger)
         {
             _logger = logger;
         }
@@ -143,9 +146,53 @@ namespace HtmlParser.Common
             }
         }
 
-        public void TrackMoviesUpdate()
+        private async Task<byte[]?> GetImageFromUrl(string url)
         {
-            DateTime currentDate = DateTime.UtcNow;
+            Stream stream = null;
+            byte[] buffer = new byte[] { };
+
+            try
+            {
+                WebProxy proxy = new WebProxy();
+                HttpClient client = new HttpClient();
+                HttpResponseMessage responseMessage = await client.GetAsync(url);
+                if (responseMessage.StatusCode == HttpStatusCode.OK)
+                {
+                    stream = await client.GetStreamAsync(url);
+                    using (MemoryStream mstream = new MemoryStream())
+                    {
+                        await stream.CopyToAsync(mstream);
+                        buffer = mstream.ToArray();
+                    }
+                    stream.Close();
+                    client.Dispose();
+                }
+
+            }
+            catch (Exception err)
+            {
+                _logger.LogError($"Error {err} from {MethodBase.GetCurrentMethod()?.Name}", err);
+                buffer = null;
+            }
+
+            return buffer;
         }
+
+        public async Task<string> FromImageToBase64(string url)
+        {
+            StringBuilder builder = new StringBuilder();
+
+            try
+            {
+                byte[]? imageBytes = await GetImageFromUrl(url);
+                builder.Append(Convert.ToBase64String(imageBytes, 0, imageBytes.Length));
+            }
+            catch (Exception err)
+            {
+                _logger.LogError($"Error {err} from {MethodBase.GetCurrentMethod()?.Name}");
+            }
+            return builder.ToString();
+        }
+
     }
 }

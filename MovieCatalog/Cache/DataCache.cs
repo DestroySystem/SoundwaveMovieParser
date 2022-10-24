@@ -1,7 +1,9 @@
 ﻿using System.Reflection;
 
 using CommonModels;
+using EFCoreData;
 using HtmlParser.Common;
+
 using Newtonsoft.Json;
 
 namespace MovieCatalog.Cache
@@ -10,36 +12,29 @@ namespace MovieCatalog.Cache
     {
         private readonly Utils _utils;
         private readonly ILogger<DataCache> _logger;
+        private readonly EFDatabaseOperations _operations;
 
-        public DataCache(Utils utils, ILogger<DataCache> logger)
+        public DataCache(Utils utils, ILogger<DataCache> logger, EFDatabaseOperations operations)
         {
             _utils = utils;
             _logger = logger;
+            _operations = operations;
         }
 
-        public Task StoreDataToInMemoryCache(string data, string key)
+        private async Task StoreDataToSqLiteDb(string data)
         {
-            Dictionary<string, string> cache = new();
             try
             {
-                if (!cache.ContainsKey(key))
-                {
-                    cache.Add(key, data);
-                }
-                else
-                {
-                    cache[key] = data;
-                }
+                await _operations.InsertMoviesFromJson(data);
             }
-            catch (Exception err)
+            catch (Exception e)
             {
-                Console.WriteLine($"Error: {err}");
+                Console.WriteLine(e);
+                throw;
             }
-
-            return Task.CompletedTask;
         }
 
-        public async Task<string> StoreDataToFileCache(string data, string path, string category)
+        public async Task<string> StoreDataToFileCache(string data, string path, string category, bool writeToDb = false)
         {
             string fileName = string.Empty;
             try
@@ -52,15 +47,20 @@ namespace MovieCatalog.Cache
                 {
                     await File.WriteAllTextAsync(fileName, data);
                 }
+
+                if (writeToDb)
+                {
+                    await StoreDataToSqLiteDb(data);
+                }
             }
             catch (Exception err)
             {
                 _logger.LogError($"Error: {err} from {MethodBase.GetCurrentMethod()?.Name}", err);
             }
-/*            finally
-            {
-                await Task.Run(() => { InitImageResize(data); return Task.CompletedTask; });
-            }*/
+            /*            finally
+                        {
+                            await Task.Run(() => { InitImageResize(data); return Task.CompletedTask; });
+                        }*/
 
             return fileName;
         }

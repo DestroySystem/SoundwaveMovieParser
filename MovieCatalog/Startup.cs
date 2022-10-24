@@ -1,4 +1,7 @@
-﻿using MovieCatalog.Cache;
+﻿using EFCoreData;
+using EFCoreData.Context;
+
+using MovieCatalog.Cache;
 
 namespace MovieCatalog
 {
@@ -15,6 +18,8 @@ namespace MovieCatalog
             services.AddScoped<HtmlParser.Dictionary.CategoriesDictionary>();
             services.AddScoped<HtmlParser.Helper.GenresTranslate>();
             services.AddScoped<HtmlParser.Helper.HdrezkaTagHelpers>();
+            services.AddScoped<EFDatabaseOperations>();
+            services.AddScoped<MovieDbContext>();
             services.AddScoped<DataCache>();
             services.AddScoped<HttpClient>();
             services.AddApplicationInsightsTelemetry();

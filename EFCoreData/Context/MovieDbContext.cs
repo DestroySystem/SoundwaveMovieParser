@@ -1,8 +1,8 @@
-﻿using EFCoreModels.Models;
+﻿using EFCoreData.Models;
 
 using Microsoft.EntityFrameworkCore;
 
-namespace EFCoreModels.Context
+namespace EFCoreData.Context
 {
     public class MovieDbContext : DbContext
     {
@@ -13,11 +13,11 @@ namespace EFCoreModels.Context
         public DbSet<Movies>? Movies { get; set; }
         public DbSet<CategoryToGenres>? CategoryToGenres { get; set; }
 
-        public string? DbPath { get; }
+        private string? DbPath { get; }
 
         public MovieDbContext()
         {
-            const string folder = @"C:\SoundwaveMovieParser\Resources\Data";
+            const string folder = @"C:\SoundwaveMovieParser\SoundwaveMovieParser\Resources\Data";
             DbPath = Path.Join(folder, "SoundwaveMovieDb.db");
         }
 
@@ -40,13 +40,11 @@ namespace EFCoreModels.Context
                 .ValueGeneratedOnAdd();
 
             builder.Entity<Movies>()
-                .Property(b => b.Id)
-                .ValueGeneratedOnAdd();
+                .Property(b => b.Id);
 
             builder.Entity<Images>()
                 .Property(b => b.Id)
                 .ValueGeneratedOnAdd();
-
 
             builder.Entity<GenresToMovie>()
                 .Property(b => b.Id)

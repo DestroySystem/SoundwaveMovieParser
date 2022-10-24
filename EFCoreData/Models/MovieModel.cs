@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-using Microsoft.EntityFrameworkCore;
-
-namespace EFCoreModels.Models
+namespace EFCoreData.Models
 {
     public class Categories
     {
