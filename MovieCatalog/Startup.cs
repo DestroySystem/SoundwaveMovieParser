@@ -1,5 +1,8 @@
 ﻿using EFCoreData.Context;
 using EFCoreData.Operations;
+
+using Microsoft.EntityFrameworkCore;
+
 using MovieCatalog.Cache;
 
 namespace MovieCatalog
@@ -24,9 +27,12 @@ namespace MovieCatalog
             services.AddApplicationInsightsTelemetry();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MovieDbContext context)
         {
             app.UseForwardedHeaders();
+
+            context.Database.Migrate();
+
             if(env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

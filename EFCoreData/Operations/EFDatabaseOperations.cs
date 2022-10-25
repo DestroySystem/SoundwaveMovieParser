@@ -113,9 +113,11 @@ namespace EFCoreData.Operations
 
         public async Task InsertMoviesFromJson(string data)
         {
+            int count = 1;
             MovieDetailsModel movieDetails = JsonConvert.DeserializeObject<MovieDetailsModel>(data);
             foreach (MovieModel movie in movieDetails.Models)
             {
+                Console.Write($"\r{count++}/{movieDetails.Models.Count} {(count * 100)/movieDetails.Models.Count}%");
                 IQueryable<int> cat = _context.Categories.Where(category => category.Name == movie.Category)
                     .Select(category => category.Id);
 

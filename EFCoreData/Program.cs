@@ -12,7 +12,7 @@ namespace EFCoreData
     public class Program
     {
         private static readonly ILogger<Utils>? _logger;
-        public static Task Main(string[] args)
+        public async static Task Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
             CategoriesDictionary dictionary = new CategoriesDictionary();
@@ -23,22 +23,21 @@ namespace EFCoreData
             List<string> categories = dictionary.GetCategories();
 
             string json =
-                File.ReadAllText(@"C:\SoundwaveMovieParser\SoundwaveMovieParser\MovieCatalog\Data\animationListData.json");
+                File.ReadAllText(@"C:\SoundwaveMovieParser\MovieCatalog\Data\animationListData.json");
 
-            // operations.AddCategory(categories);
-            // operations.AddGenres();
-            // operations.TranslateGenres();
+            //operations.AddCategory(categories);
+            //operations.AddGenres();
+            //operations.TranslateGenres();
             //operations.AddCategoryToGenres();
-            // operations.Update();
-            operations.ReadCategories();
-            operations.ReadGenres();
-            // await operations.InsertMoviesFromJson(json);
+            //operations.Update();
+            //operations.ReadCategories();
+            //operations.ReadGenres();
+            await operations.InsertMoviesFromJson(json);
             operations.ReadMovies();
             //operations.ReadCategoriesToGenres();
             //operations.Remove();
 
             Console.ReadLine();
-            return Task.CompletedTask;
         }
     }
 }
