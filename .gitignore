@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /Resources/Data
 /EFCoreData/Migrations
+/MovieCatalog/Data/animationListData.json

@@ -41,9 +41,9 @@ namespace EFCoreData.Models
         public string? FromTheSeries { get; set; }
         public string? Link { get; set; }
         [ForeignKey("ImageID")]
-        public Guid? Image { get; set; }
+        public Guid Image { get; set; }
         [ForeignKey("CategoryID")]
-        public int? Category { get; set; }
+        public int Category { get; set; }
         public string? Country { get; set; }
     }
 
@@ -52,9 +52,9 @@ namespace EFCoreData.Models
         [Key]
         public Guid Id { get; set; }
         [ForeignKey("MovieID")]
-        public Guid? Movie { get; set; }
+        public Guid Movie { get; set; }
         [ForeignKey("GenreID")]
-        public int? Genre { get; set; }
+        public int Genre { get; set; }
     }
 
     public class CategoryToGenres

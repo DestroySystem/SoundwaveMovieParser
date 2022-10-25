@@ -209,7 +209,7 @@ namespace HtmlParser.Parser
                     movie.Duration = data.ContainsKey("Duration") ? data["Duration"] : string.Empty;
                 }
             }
-            catch (Exception err)
+            catch (ArgumentNullException err)
             {
                 _logger.LogError(message: $"Error from: {MethodBase.GetCurrentMethod()?.Name} Error message: {err}", args: err);
             }

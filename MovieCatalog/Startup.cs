@@ -4,6 +4,7 @@ using EFCoreData.Operations;
 using Microsoft.EntityFrameworkCore;
 
 using MovieCatalog.Cache;
+using MovieCatalog.DbData;
 
 namespace MovieCatalog
 {
@@ -22,6 +23,7 @@ namespace MovieCatalog
             services.AddScoped<HtmlParser.Helper.HdrezkaTagHelpers>();
             services.AddScoped<EFDatabaseOperations>();
             services.AddScoped<MovieDbContext>();
+            services.AddScoped<DataRetrieval>();
             services.AddScoped<DataCache>();
             services.AddScoped<HttpClient>();
             services.AddApplicationInsightsTelemetry();

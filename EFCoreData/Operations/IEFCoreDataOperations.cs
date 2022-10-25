@@ -1,4 +1,6 @@
-﻿namespace EFCoreData.Operations
+﻿using CommonModels;
+
+namespace EFCoreData.Operations
 {
     // ReSharper disable once InconsistentNaming
     public interface IEFCoreDataOperations
@@ -21,9 +23,9 @@
         /// <summary>
         /// Check if in table Movies exist records from json file, to do not create duplicates
         /// </summary>
-        /// <param name="category"></param>
+        /// <param name="data"></param>
         /// <returns></returns>
-        public Task CheckRecordNotExist(string category);
+        public Task CheckRecordNotExist(string data);
 
         /// <summary>
         /// Insert to Movies table data from json file
@@ -31,6 +33,13 @@
         /// <param name="data"></param>
         /// <returns></returns>
         public Task InsertMoviesFromJson(string data);
+
+        /// <summary>
+        /// Insert to Movie table movie that don`t exist in table records from MovieModel
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public Task InsertMovieFromModel(MovieModel model);
 
         /// <summary>
         /// Add russian name for genres

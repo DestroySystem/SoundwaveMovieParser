@@ -21,11 +21,11 @@ namespace MovieCatalog.Cache
             _operations = operations;
         }
 
-        private async Task StoreDataToSqLiteDb(string data)
+        public async Task StoreDataToSqLiteDb(string data)
         {
             try
             {
-                await _operations.InsertMoviesFromJson(data);
+                await _operations.CheckRecordNotExist(data);
             }
             catch (Exception e)
             {
@@ -50,7 +50,7 @@ namespace MovieCatalog.Cache
 
                 if (writeToDb)
                 {
-                    await StoreDataToSqLiteDb(data);
+                   await Task.Run(async () => await StoreDataToSqLiteDb(data).ConfigureAwait(false));
                 }
             }
             catch (Exception err)

@@ -105,19 +105,87 @@ namespace EFCoreData.Operations
 
         }
 
-        public async Task CheckRecordNotExist(string category)
+        public async Task CheckRecordNotExist(string data)
         {
+            bool isDataEmpty = false;
+            Movies dbMovie = new Movies();
+            MovieDetailsModel detailsModel = JsonConvert.DeserializeObject<MovieDetailsModel>(data);
+            foreach (MovieModel movie in detailsModel.Models)
+            {
+                isDataEmpty = _context.Movies.FirstOrDefault(x => x.Id == movie.Id) == null;
 
+                if (!isDataEmpty)
+                {
+                    dbMovie = _context.Movies.First(x => x.Id == movie.Id);
+                }
+
+                int moviesCount = _context.Movies.Count();
+                if (moviesCount == 0)
+                {
+                    await InsertMoviesFromJson(data);
+                }
+                else
+                {
+                    if (dbMovie == null)
+                    {
+                        await InsertMovieFromModel(movie);
+                    }
+                }
+            }
         }
 
 
+        public async Task InsertMovieFromModel(MovieModel model)
+        {
+            IQueryable<int> category = _context.Categories.Where(c => c.Name == model.Category).Select(c => c.Id);
+
+            _context.Add(new Images
+            {
+                ContentType = model?.CoverImage?.ContentType,
+                Link = model?.CoverImage?.Path,
+                Base64ImageContent = await _utils.FromImageToBase64(model?.CoverImage?.Path)
+
+            });
+            await _context.SaveChangesAsync();
+
+            IQueryable<Guid> image = _context.Images.Where(x => x.Link == model.CoverImage.Path).Select(x => x.Id);
+
+            _context.Add(new Movies()
+            {
+                Id = model.Id,
+                OriginalName = model.OriginalName,
+                NameRu = model.NameRu,
+                Age = model.Age,
+                Country = model.Country,
+                ReleaseDate = model.ReleaseDate,
+                Category = category.FirstOrDefault(),
+                Quality = model.Quality,
+                Duration = model.Duration,
+                FromTheSeries = model.FromTheSeries,
+                Link = model.Link,
+                Image = image.FirstOrDefault()
+            });
+            await _context.SaveChangesAsync();
+
+            IQueryable<Guid> movieId = _context.Movies.Where(x => x.OriginalName == model.OriginalName).Select(y => y.Id);
+
+            foreach (var genreId in model.Genres.Select(genre => _context.Genres.Where(x => x.Name == genre).Select(y => y.Id)))
+            {
+                _context.Add(new GenresToMovie()
+                {
+                    Movie = movieId.FirstOrDefault(),
+                    Genre = genreId.FirstOrDefault(),
+                });
+                await _context.SaveChangesAsync();
+            }
+        }
+
         public async Task InsertMoviesFromJson(string data)
         {
-            int count = 1;
+            int count = 0;
             MovieDetailsModel movieDetails = JsonConvert.DeserializeObject<MovieDetailsModel>(data);
             foreach (MovieModel movie in movieDetails.Models)
             {
-                Console.Write($"\r{count++}/{movieDetails.Models.Count} {(count * 100)/movieDetails.Models.Count}%");
                 IQueryable<int> cat = _context.Categories.Where(category => category.Name == movie.Category)
                     .Select(category => category.Id);
 
@@ -160,6 +228,8 @@ namespace EFCoreData.Operations
                     });
                     await _context.SaveChangesAsync();
                 }
+
+                Console.Write($"\r{++count}/{movieDetails.Models.Count} {count * 100 / movieDetails.Models.Count:0.0}%");
             }
         }
 

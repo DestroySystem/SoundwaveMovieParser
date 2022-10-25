@@ -1,7 +1,8 @@
 ﻿using System.Reflection;
 
 using CommonModels;
-
+using EFCoreData.Context;
+using EFCoreData.Models;
 using HtmlParser.Dictionary;
 using HtmlParser.Parser;
 
@@ -18,20 +19,22 @@ namespace MovieCatalog.Controllers
         private readonly ILogger<MovieController> _logger;
         private readonly HtmlParsing _parser;
         private readonly DataCache _dataCache;
+        private readonly MovieDbContext _context;
         private string RuntimePath { get; } = Path.Combine(Environment.CurrentDirectory, "Data");
 
-        public MovieController(ILogger<MovieController> logger, HtmlParsing parser, DataCache dataCache)
+        public MovieController(ILogger<MovieController> logger, HtmlParsing parser, DataCache dataCache, MovieDbContext context)
         {
             _logger = logger;
             _parser = parser;
             _dataCache = dataCache;
+            _context = context;
         }
 
         [HttpGet]
         public IActionResult Movies()
         {
             CategoriesDictionary dictionary = new();
-            List<string> categories = dictionary.GetCategories();
+            List<Categories> categories = _context.Categories.OrderBy(x => x.Id).ToList();
             return View(categories);
         }
 
