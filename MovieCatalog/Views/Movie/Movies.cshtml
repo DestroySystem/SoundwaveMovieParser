@@ -34,7 +34,7 @@
                         <li>
                             @foreach (string genre in Model[category])
                             {
-                                <a class="dropdown-item" asp-controller="Movie" asp-action="Movies" asp-route-category="@category" asp-route-genre="@genre">@Html.Raw(genre)</a>
+                                <a class="dropdown-item" asp-controller="Movie" asp-action="Category" asp-route-category="@category">@Html.Raw(genre)</a>
                             }
                         </li>
                     </ul>
