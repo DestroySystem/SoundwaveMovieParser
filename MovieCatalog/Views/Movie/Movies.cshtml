@@ -1,24 +1,46 @@
 ﻿@using EFCoreData.Models
-@model List<EFCoreData.Models.Categories>;
+@model Dictionary<string, List<string>>;
 @{
     ViewData["Title"] = "Movie";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Movie</h1>
-
-<section class="d-flex align-items-center">
+@*<section id="hero" class="about">
     <div class="container">
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                Categories
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                @foreach (Categories category in Model)
+
+        <div class="row">
+            <div class="col-lg-2 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+                <div class="dropdown">
+                                        <button class="btn btn-get-started dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        @foreach (Categories category in Model)
+                        {
+                            <li><a class="dropdown-item" asp-controller="Movie" asp-action="Category" asp-route-category=@category.Name>@Html.Raw(category.Name)</a></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>*@
+
+
+<section id="hero" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="dropdown">
+                @foreach (string category in Model.Keys)
                 {
-                    <li><a class="dropdown-item" asp-controller="Movie" asp-action="Category" asp-route-category=@category.Name>@Html.Raw(category.Name)</a></li>
+                    <h4>
+                    @foreach (var genre in Model[category])
+                    {
+@Html.Raw($"Key: {category} \t Value: {genre}")
                 }
-            </ul>
+                    </h4>
+                }
+            </div>
         </div>
     </div>
 </section>

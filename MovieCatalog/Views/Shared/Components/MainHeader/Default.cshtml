@@ -1,4 +1,4 @@
-﻿
+﻿@*
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
         <h1><a href="@Url.Action("Index", "Home")" class="logo">Movie Catalog</a></h1>
@@ -13,5 +13,25 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
+    </div>
+</header>*@
+
+
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo"><a asp-controller="Home" asp-action="Index">Home</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link active" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                <li><a class="nav-link" asp-controller="Movie" asp-action="Movies">Movies</a></li>
+                <li><a class="getstarted" href="#about">Get Started</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
     </div>
 </header>

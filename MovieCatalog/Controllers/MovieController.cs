@@ -33,9 +33,27 @@ namespace MovieCatalog.Controllers
         [HttpGet]
         public IActionResult Movies()
         {
-            CategoriesDictionary dictionary = new();
-            List<Categories> categories = _context.Categories.OrderBy(x => x.Id).ToList();
-            return View(categories);
+                                List<string> genresList = new List<string>();
+            Dictionary<string, List<string>> genresToCategory = new Dictionary<string, List<string>>();
+            List<Categories> categoryList = _context.Categories.OrderBy(x => x.Id).ToList();
+            foreach (var category in categoryList)
+            {
+                List<int> categoryToGenres =
+                    _context.CategoryToGenres.Where(x => x.Category == category.Id).Select(x => x.Genre).ToList();
+                foreach (var genres in categoryToGenres)
+                {
+
+                    foreach (var name in _context.Genres.Where(x => x.Id == genres))
+                    {
+                       genresList.Add(name.Name); 
+                    }
+                }
+                if (!genresToCategory.ContainsKey(category.Name))
+                    genresToCategory.Add(category.Name, new List<string>(genresList));
+            }
+
+
+            return View(genresToCategory);
         }
 
         [HttpGet]

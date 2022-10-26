@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<section class="d-flex align-items-center">
+@*<section class="d-flex align-items-center">
     <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             @foreach (var item in Model.Models)
@@ -39,8 +39,45 @@
             }
         </div>
     </div>
-</section>
+</section>*@
 
+
+<section id="hero" class="about">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Models)
+            {
+                ViewData["Title"] = item?.Category;
+                <div class="col-xl-3 col-md-8 pt-4 ">
+                    <div class="card h-100" style="background-color:lavender">
+                        <img src=@item?.CoverImage?.Path class="card-img" alt=@item?.OriginalName />
+                        <div class="card-body">
+                            <h4 class="card-title mb-2 text-muted">@Html.Raw(item?.OriginalName)</h4>
+                            <h5 class="card-text">@Html.Raw(item?.NameRu)</h5>
+                            <h6>Release date: <span>@Html.Raw(item?.ReleaseDate)</span></h6>
+                            <h6>Country: <span>@Html.Raw(item?.Country)</span></h6>
+                            <h6>Quality: <span>@Html.Raw(item?.Quality)</span></h6>
+                            <h6 class="card-text">
+                                Genres:
+                                @foreach (string i in item?.Genres)
+                                {
+                                    @Html.Raw(i + ", ")
+                                    ;
+                                }
+                            </h6>
+                        </div>
+                        <div class="card-footer rounded-1">
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a class="btn btn-primary rounded-5" title="Play" href="@Url.Action("LoadMovie", "Movie", new{id = $"{item?.Id}&{item?.Category}"})">Play</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
 
 
 
