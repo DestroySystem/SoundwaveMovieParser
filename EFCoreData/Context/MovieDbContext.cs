@@ -17,7 +17,7 @@ namespace EFCoreData.Context
 
         public MovieDbContext()
         {
-            const string folder = @"C:\SoundwaveMovieParser\SoundwaveMovieParser\Resources\Data";
+            string folder = Environment.CurrentDirectory;
             DbPath = Path.Join(folder, "SoundwaveMovieDb.db");
         }
 

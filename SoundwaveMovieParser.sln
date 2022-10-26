@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCatalog", "MovieCatalo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataModels", "DataModels", "{6365AADA-129C-495D-8A3A-7145F063CE0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreData", "EFCoreData\EFCoreData.csproj", "{85C05185-EC3D-45CD-936D-DA52DFABA826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreData", "EFCoreData\EFCoreData.csproj", "{85C05185-EC3D-45CD-936D-DA52DFABA826}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

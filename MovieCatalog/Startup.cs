@@ -1,6 +1,6 @@
 ﻿using EFCoreData.Context;
 using EFCoreData.Operations;
-
+using HtmlParser.Dictionary;
 using Microsoft.EntityFrameworkCore;
 
 using MovieCatalog.Cache;
@@ -29,11 +29,22 @@ namespace MovieCatalog
             services.AddApplicationInsightsTelemetry();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MovieDbContext context)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MovieDbContext context, EFDatabaseOperations operations)
         {
             app.UseForwardedHeaders();
 
-            context.Database.Migrate();
+            context.Database.EnsureCreated();
+
+            if(!context.Categories.Any() && !context.GenresToMovies.Any() && !context.CategoryToGenres.Any())
+            {
+                context.Database.Migrate();
+                CategoriesDictionary dictionary = new();
+                operations.AddCategory(dictionary.GetCategories());
+                operations.AddGenres();
+                operations.TranslateGenres();
+                operations.AddCategoryToGenres();
+            }
+            
 
             if(env.IsDevelopment())
             {
