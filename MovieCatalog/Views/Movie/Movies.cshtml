@@ -10,16 +10,12 @@
 
         <div class="row">
             <div class="col-lg-2 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-                <div class="dropdown">
-                                        <button class="btn btn-get-started dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categories
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        @foreach (Categories category in Model)
-                        {
-                            <li><a class="dropdown-item" asp-controller="Movie" asp-action="Category" asp-route-category=@category.Name>@Html.Raw(category.Name)</a></li>
-                        }
-                    </ul>
+                <div class="dropdown-menu-dark">
+                    @foreach(string category in Model.Keys)
+                    {
+                        <button class="btn btn-get-started dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">@Html.Raw(category)</button>
+                    }
+
                 </div>
             </div>
         </div>
@@ -33,12 +29,15 @@
             <div class="dropdown">
                 @foreach (string category in Model.Keys)
                 {
-                    <h4>
-                    @foreach (var genre in Model[category])
-                    {
-@Html.Raw($"Key: {category} \t Value: {genre}")
-                }
-                    </h4>
+                    <button class="btn btn-get-started dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">@Html.Raw(category)</button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            @foreach (string genre in Model[category])
+                            {
+                                <a class="dropdown-item" asp-controller="Movie" asp-action="Movies" asp-route-category="@category" asp-route-genre="@genre">@Html.Raw(genre)</a>
+                            }
+                        </li>
+                    </ul>
                 }
             </div>
         </div>

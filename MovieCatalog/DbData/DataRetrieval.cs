@@ -19,7 +19,7 @@ namespace MovieCatalog.DbData
             _logger = logger;
         }
 
-        public async Task<MovieModel> LoadMovieFromDb(string id)
+/*        public async Task<MovieModel> LoadMovieFromDb(string id)
         {
             MovieModel movieDetails = new();
             try
@@ -54,7 +54,7 @@ namespace MovieCatalog.DbData
             }
 
             return movieDetails;
-        }
+        }*/
 
         public async Task<MovieModel> LoadMovieFromFile(string id, string category, string path)
         {
