@@ -191,7 +191,7 @@ namespace HtmlParser.Parser
                 };
 
                 List<string> genres = _translate.TranslateGenres(data);
-                HtmlNodeCollection detailsNode = document.DocumentNode.SelectNodes(_helper.OriginalNameTagHelper);
+                HtmlNodeCollection detailsNode = document.DocumentNode.SelectNodes(_helper.OriginalNameTagHelper) == null ? document.DocumentNode.SelectNodes(_helper.NameRuTagHelper) : document.DocumentNode.SelectNodes(_helper.OriginalNameTagHelper);
                 foreach (HtmlNode? item in detailsNode)
                 {
                     movie.Id = Guid.NewGuid();

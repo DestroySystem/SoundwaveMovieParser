@@ -69,7 +69,7 @@ namespace MovieCatalog.Controllers
                 if (files.Length == 0)
                 {
                     data = await _parser.GetMovieAsync(category: category);
-                    await _dataCache.StoreDataToFileCache(data, RuntimePath, category);
+                    await _dataCache.StoreDataToFileCache(data, RuntimePath, category, true);
                 }
                 else
                 {
@@ -81,11 +81,12 @@ namespace MovieCatalog.Controllers
                             if (fileInfo.Exists && fileInfo.FullName.Contains(category) && fileInfo.Extension == ".json")
                             {
                                 data = await System.IO.File.ReadAllTextAsync(file);
+                                await _dataCache.StoreDataToFileCache(data, RuntimePath, category, true);
                             }
                             else
                             {
                                 data = await _parser.GetMovieAsync(category);
-                                await _dataCache.StoreDataToFileCache(data, RuntimePath, category);
+                                await _dataCache.StoreDataToFileCache(data, RuntimePath, category, true);
                             }
                         }
                     }
