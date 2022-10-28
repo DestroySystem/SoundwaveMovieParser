@@ -1,8 +1,10 @@
 ﻿using System.Reflection;
 
 using CommonModels;
+
 using EFCoreData.Context;
 using EFCoreData.Models;
+
 using HtmlParser.Dictionary;
 using HtmlParser.Parser;
 
@@ -42,7 +44,7 @@ namespace MovieCatalog.Controllers
                 List<string> genresList = new();
                 foreach (var genres in categoryToGenres)
                 {
-                   foreach(var name in _context.Genres.Where(x => x.Id == genres))
+                    foreach (var name in _context.Genres.Where(x => x.Id == genres))
                     {
                         genresList.Add(name.Name);
                     }
@@ -56,7 +58,7 @@ namespace MovieCatalog.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Category(string category)
+        public async Task<IActionResult> Category(string category, string genre)
         {
             string data = string.Empty;
             MovieDetailsModel? detailsModel = new();
@@ -83,11 +85,11 @@ namespace MovieCatalog.Controllers
                                 data = await System.IO.File.ReadAllTextAsync(file);
                                 await _dataCache.StoreDataToFileCache(data, RuntimePath, category, true);
                             }
-                            else
-                            {
-                                data = await _parser.GetMovieAsync(category);
-                                await _dataCache.StoreDataToFileCache(data, RuntimePath, category, true);
-                            }
+                        }
+                        else
+                        {
+                            data = await _parser.GetMovieAsync(category);
+                            await _dataCache.StoreDataToFileCache(data, RuntimePath, category, true);
                         }
                     }
                 }

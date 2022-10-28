@@ -1,4 +1,5 @@
 ﻿using CommonModels;
+using EFCoreData.Models;
 
 namespace EFCoreData.Operations
 {
@@ -75,5 +76,20 @@ namespace EFCoreData.Operations
         /// Remove record
         /// </summary>
         public void Remove();
+
+        /// <summary>
+        /// Get from Db, List of Movies by category
+        /// </summary>
+        /// <param name="category"></param>
+        /// <returns></returns>
+        public Task<List<Movies>> GetMoviesByCategory(string category);
+
+        /// <summary>
+        /// Get from Db, List of Movies by genre, using as filter also category
+        /// </summary>
+        /// <param name="category"></param>
+        /// <param name="genre"></param>
+        /// <returns></returns>
+        public Task<List<Movies>> GetMoviesByGenre(string category, string genre);
     }
 }

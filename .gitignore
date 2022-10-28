@@ -364,3 +364,5 @@ FodyWeavers.xsd
 /Resources/Data
 /EFCoreData/Migrations
 /MovieCatalog/Data/animationListData.json
+/MovieCatalog/Resources/Data
+/MovieCatalog/Data

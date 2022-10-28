@@ -17,7 +17,9 @@ namespace EFCoreData.Context
 
         public MovieDbContext()
         {
-            string folder = Environment.CurrentDirectory;
+            string folder = Environment.CurrentDirectory + "\\Resources\\Data";
+            if(!Directory.Exists(folder))
+                Directory.CreateDirectory(folder);
             DbPath = Path.Join(folder, "SoundwaveMovieDb.db");
         }
 

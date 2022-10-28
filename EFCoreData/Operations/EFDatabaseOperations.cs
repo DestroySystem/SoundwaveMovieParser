@@ -108,16 +108,11 @@ namespace EFCoreData.Operations
         public async Task CheckRecordNotExist(string data)
         {
             bool isDataEmpty = false;
-            Movies dbMovie = new Movies();
             MovieDetailsModel detailsModel = JsonConvert.DeserializeObject<MovieDetailsModel>(data);
             foreach (MovieModel movie in detailsModel.Models)
             {
                 isDataEmpty = _context.Movies.FirstOrDefault(x => x.Id == movie.Id) == null;
 
-                if (!isDataEmpty)
-                {
-                    dbMovie = _context.Movies.First(x => x.Id == movie.Id);
-                }
 
                 int moviesCount = _context.Movies.Count();
                 if (moviesCount == 0)
@@ -126,7 +121,7 @@ namespace EFCoreData.Operations
                 }
                 else
                 {
-                    if (dbMovie == null)
+                    if (isDataEmpty)
                     {
                         await InsertMovieFromModel(movie);
                     }
@@ -323,6 +318,23 @@ namespace EFCoreData.Operations
                 _context.Remove(item);
             }
             _context.SaveChanges();
+        }
+
+        public async Task<List<Movies>> GetMoviesByCategory(string category)
+        {
+            List<Movies> movie = null;
+            if (_context.Movies.Any())
+            {
+                IQueryable<int> dbCategory = _context.Categories.Where(x => x.Name == category).Select(x => x.Id);
+                movie = _context.Movies.Where(x => x.Category == dbCategory.FirstOrDefault()).ToList();
+            }
+
+            return movie;
+        }
+
+        public Task<List<Movies>> GetMoviesByGenre(string category, string genre)
+        {
+            throw new NotImplementedException();
         }
     }
 }
